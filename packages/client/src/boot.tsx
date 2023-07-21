@@ -30,17 +30,17 @@ let registerUIComponents = registerUIComponentsImport;
 let Engine = EngineImport;
 
 const defaultParams = {
-  chainId: "4242",
-  worldAddress: "0xc1c15CCE34E16684d36B0F76B9fa4f74b3a279f4",
-  rpc: "https://follower.testnet-chain.linfra.xyz",
-  wsRpc: "wss://follower.testnet-chain.linfra.xyz",
-  initialBlockNumber: "1443526",
-  snapshot: "https://ecs-snapshot.testnet-mud-services.linfra.xyz",
-  stream: "https://ecs-stream.testnet-mud-services.linfra.xyz",
-  relay: "https://ecs-relay.testnet-mud-services.linfra.xyz",
-  faucet: "https://faucet.testnet-mud-services.linfra.xyz",
+  chainId: "9088912",
+  worldAddress: "0xC98938E3cA4b5702d6aF1f05345Be3aB93556cF2",
+  rpc: "https://testnet.rpc.lootchain.com/http",
+  wsRpc: "wss://testnet.rpc.lootchain.com/ws",
+  initialBlockNumber: "2038",
+  snapshot: "",
+  stream: "",
+  relay: "",
+  faucet: "",
   blockTime: "1000",
-  blockExplorer: "https://explorer.testnet-chain.linfra.xyz",
+  blockExplorer: "https://testnet.explorer.lootchain.com",
   dev: "false",
 };
 
