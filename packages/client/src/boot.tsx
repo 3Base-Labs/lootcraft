@@ -29,7 +29,22 @@ let createNoaLayer = createNoaLayerImport;
 let registerUIComponents = registerUIComponentsImport;
 let Engine = EngineImport;
 
-const defaultParams = {
+const mainnetParams = {
+  chainId: "5151706",
+  worldAddress: "0x859c814629F40Db994665C2a5D424C9bC232d3Db",
+  rpc: "https://rpc.lootchain.com/http",
+  wsRpc: "wss://rpc.lootchain.com/ws",
+  initialBlockNumber: "185",
+  snapshot: "",
+  stream: "",
+  relay: "",
+  faucet: "",
+  blockTime: "1000",
+  blockExplorer: "https://explorer.lootchain.com",
+  dev: "false",
+};
+
+const testnetParams = {
   chainId: "9088912",
   worldAddress: "0xC98938E3cA4b5702d6aF1f05345Be3aB93556cF2",
   rpc: "https://testnet.rpc.lootchain.com/http",
@@ -43,6 +58,8 @@ const defaultParams = {
   blockExplorer: "https://testnet.explorer.lootchain.com",
   dev: "false",
 };
+
+const defaultParams = mainnetParams;
 
 export const ecs = {
   setComponent,
