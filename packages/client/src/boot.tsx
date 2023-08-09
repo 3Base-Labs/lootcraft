@@ -188,7 +188,7 @@ async function bootGame() {
       reloadingNoa = false;
     });
   }
-  console.log("[Global] OPCraft booted");
+  console.log("[Global] LOOTCraft booted");
 
   return { layers, ecs };
 }
