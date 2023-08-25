@@ -35,7 +35,7 @@ const mainnetParams = {
   rpc: "https://rpc.lootchain.com/http",
   wsRpc: "wss://rpc.lootchain.com/ws",
   initialBlockNumber: "185",
-  snapshot: "",
+  snapshot: "https://lootcraft-snapshot.buidl.day",
   stream: "",
   relay: "",
   faucet: "",
