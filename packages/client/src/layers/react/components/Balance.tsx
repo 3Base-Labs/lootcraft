@@ -36,8 +36,19 @@ export const Balance: React.FC<{
 
   async function requestDrip() {
     try {
-      await fetch(`https://lootcraft-faucet.buidl.day`, { method: 'post', body: JSON.stringify({ walletAddress: address }) });
-      setTimeToDrip(86400000);
+      const res = await fetch(`https://lootcraft-faucet.buidl.day`, { 
+        method: 'post', 
+        body: JSON.stringify({ walletAddress: address }), 
+        headers: { 
+          'content-type': 'application/json',
+        },
+      });
+      const result = await res.json();
+      if (result) {
+        setTimeToDrip(86400000);
+      } else {
+        alert(result?.message);
+      }
     } catch(err) {
       alert((err as any)?.message);
     }
