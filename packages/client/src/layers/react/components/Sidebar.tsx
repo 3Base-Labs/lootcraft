@@ -70,13 +70,15 @@ export function registerSidebar() {
         SingletonEntity,
       } = layers.noa;
 
+      const isMainWorld = layers.network.worldAddress === "0x859c814629F40Db994665C2a5D424C9bC232d3Db" && layers.network.network.config.chainId === 5151706;
+
       function updateTutorial(update: Partial<ComponentValue<SchemaOf<typeof Tutorial>>>) {
         updateComponent(Tutorial, SingletonEntity, update);
       }
 
       return (
         <Wrapper>
-          <Balance {...balance} />
+          <Balance {...balance} isMainWorld={isMainWorld} />
           <ChunkExplorer {...chunk} />
           {tutorial?.community && <JoinSocial onClose={() => updateTutorial({ community: false })} />}
           {tutorial?.moving && (
