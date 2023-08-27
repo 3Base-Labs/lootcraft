@@ -46,6 +46,7 @@ export const Balance: React.FC<{
       const result = await res.json();
       if (result) {
         setTimeToDrip(86400000);
+        await updateBalance();
       } else {
         alert(result?.message);
       }
