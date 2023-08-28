@@ -89,7 +89,7 @@ export const Balance: React.FC<{
             navigator.clipboard.writeText(localStorage.getItem('burnerWallet') || '');
           // }
         }}>Export Private Key</Button>}
-        { timeToDrip <= 0 && <Button style={{ marginTop: 8 }} onClick={() => requestDrip()}>Reqeust Drip</Button>}        
+        { timeToDrip <= 0 && <Button style={{ marginTop: 8 }} onClick={() => requestDrip()}>Request Faucet</Button>}        
       </BalanceContainer>
     </>
   );
