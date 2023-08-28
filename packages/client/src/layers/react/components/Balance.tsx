@@ -84,6 +84,11 @@ export const Balance: React.FC<{
         </p>
         <p>Balance: {balance} GWEI</p>
         { address && <Button style={{ marginTop: 8 }} onClick={() => navigator.clipboard.writeText(address)}>Copy Address</Button>}
+        { address && <Button style={{ marginTop: 8 }} onClick={() => {
+          if (confirm('Do you want to copy private key to clipboard?')) {
+            navigator.clipboard.writeText(localStorage.getItem('burnerWallet') || '');
+          }
+        }}>Export Private Key</Button>}
         { timeToDrip <= 0 && <Button style={{ marginTop: 8 }} onClick={() => requestDrip()}>Reqeust Drip</Button>}        
       </BalanceContainer>
     </>
