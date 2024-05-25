@@ -28,6 +28,13 @@ const anvil = {
   chainId: 31337,
 };
 
+const l3base = {
+  url: "https://rpc.l3.3base.org/",
+  accounts: ["0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"],
+  chainId: 48220505331,
+};
+
+
 const op = {
   live: true,
   url: "https://l2.op-bedrock.lattice.xyz",
@@ -74,6 +81,7 @@ module.exports = {
     hardhat,
     op,
     anvil,
+    l3base
   },
   paths: {
     sources: "./src",

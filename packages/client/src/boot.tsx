@@ -30,6 +30,20 @@ let registerUIComponents = registerUIComponentsImport;
 let Engine = EngineImport;
 
 const mainnetParams = {
+  chainId: "48220505331",
+  worldAddress: "0x859c814629F40Fb294665C2a5D424C9bC232d3Db",
+  rpc: "https://rpc.l3.3base.org/",
+  initialBlockNumber: "981105",
+  snapshot: "https://lootcraft-snapshot.buidl.day",
+  stream: "",
+  relay: "",
+  faucet: "",
+  blockTime: "1000",
+  blockExplorer: "https://base.nautscan.com",
+  dev: "false",
+};
+
+const mainnetParams = {
   chainId: "5151706",
   worldAddress: "0x859c814629F40Db994665C2a5D424C9bC232d3Db",
   rpc: "https://rpc.lootchain.com/http",
